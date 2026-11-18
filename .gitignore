@@ -1,0 +1,7 @@
+# Gemaakt door Maak.cmd
+uitvoer/
+
+# Gedownloade hulpmiddelen
+bouw/hulpmiddelen/ffmpeg.exe
+bouw/hulpmiddelen/ffmpeg-licentie.txt
+bouw/hulpmiddelen/IntuneWinAppUtil.exe

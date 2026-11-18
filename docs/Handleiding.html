@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Examenopname - handleiding</title>
+<style>
+  @page { size: A4; margin: 16mm 18mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", system-ui, sans-serif; color: #1f2937; line-height: 1.5; margin: 0; background: #eef1f5;
+         -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .pagina { background: #fff; max-width: 210mm; margin: 24px auto; padding: 18mm; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+  header { display: flex; align-items: center; gap: 16px; border-bottom: 3px solid #e62828; padding-bottom: 12px; margin-bottom: 18px; }
+  header h1 { font-size: 26px; margin: 0; }
+  header p { margin: 2px 0 0; color: #6b7280; }
+  h2 { font-size: 18px; color: #1c2c48; margin: 22px 0 8px; }
+  ol.stappen { list-style: none; padding: 0; margin: 0; counter-reset: stap; }
+  ol.stappen li { counter-increment: stap; position: relative; padding: 8px 0 8px 48px; min-height: 40px; }
+  ol.stappen li::before { content: counter(stap); position: absolute; left: 0; top: 6px; width: 32px; height: 32px; border-radius: 50%;
+         background: #1c2c48; color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  ul { padding-left: 20px; margin: 6px 0; }
+  li { margin: 3px 0; }
+  .kader { border-radius: 10px; padding: 12px 16px; margin: 14px 0; }
+  .info { background: #eef4ff; border-left: 5px solid #1c2c48; }
+  .let-op { background: #fff4e5; border-left: 5px solid #f08c00; }
+  .naast { display: flex; gap: 24px; align-items: center; }
+  .naast > div { flex: 1; }
+  /* nagemaakt opnamevenster */
+  .venster { width: 300px; border: 3px solid #e62828; background: #fff; padding: 10px 12px; font-size: 13px; flex: none; }
+  .venster .rij { display: flex; gap: 10px; align-items: center; }
+  .venster b { font-size: 16px; }
+  .venster .bol { color: #e62828; font-size: 18px; }
+  .venster .grijs { color: #888; font-size: 11px; }
+  .venster .knop { margin-top: 8px; text-align: right; }
+  .venster .knop span { border: 1px solid #999; padding: 3px 8px; background: #f3f3f3; font-size: 12px; }
+  table { border-collapse: collapse; width: 100%; margin: 6px 0; }
+  td { border-bottom: 1px solid #e5e7eb; padding: 7px 6px; vertical-align: top; }
+  td:first-child { width: 38%; font-weight: 600; }
+  footer { margin-top: 24px; font-size: 12px; color: #9ca3af; }
+  h2 { break-after: avoid; }
+  @media print {
+    body { background: #fff; font-size: 13px; }
+    h2 { margin: 14px 0 6px; }
+    ol.stappen li { padding: 5px 0 5px 46px; min-height: 36px; }
+    td { padding: 5px 6px; }
+    .kader { margin: 10px 0; padding: 10px 14px; }
+    .pagina { box-shadow: none; margin: 0; padding: 0; max-width: none; }
+    .pagina + .pagina { break-before: page; }
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="logo" viewBox="0 0 512 512">
+    <rect x="16" y="16" width="480" height="480" rx="96" fill="#1c2c48"/>
+    <rect x="96" y="130" width="320" height="210" rx="22" fill="none" stroke="#fff" stroke-width="26"/>
+    <rect x="226" y="340" width="60" height="52" fill="#fff"/>
+    <rect x="170" y="384" width="172" height="28" rx="12" fill="#fff"/>
+    <circle cx="256" cy="235" r="50" fill="#e62828"/>
+  </symbol>
+</svg>
+
+<!-- ============================ LEERLINGEN ============================ -->
+<section class="pagina">
+  <header>
+    <svg width="56" height="56"><use href="#logo"/></svg>
+    <div>
+      <h1>Examenopname</h1>
+      <p>Handleiding voor leerlingen</p>
+    </div>
+  </header>
+
+  <p>Tijdens een digitaal examen wordt je scherm opgenomen. Zo kan de school achteraf nagaan dat iedereen eerlijk gewerkt heeft. Er wordt <strong>geen geluid</strong> en <strong>geen webcam</strong> opgenomen, alleen wat er op je scherm staat.</p>
+
+  <h2>Zo start je de opname</h2>
+  <ol class="stappen">
+    <li>Dubbelklik op <strong>Examenopname</strong> op je bureaublad. Staat het daar niet, zoek dan "Examenopname" in het Startmenu.</li>
+    <li>Lees de korte uitleg en klik op <strong>Start opname</strong>.</li>
+    <li>Rechtsonder verschijnt het opnamevenster met een rode rand. Laat het openstaan. Zit het in de weg? Dan mag je het verslepen.</li>
+    <li>Maak je examen.</li>
+    <li>Klaar? Steek je hand op. De leerkracht stopt de opname.</li>
+  </ol>
+
+  <div class="naast">
+    <div class="venster">
+      <div class="rij">
+        <svg width="44" height="44"><use href="#logo"/></svg>
+        <div>
+          <div><span class="bol">●</span> <b>OPNAME LOOPT</b></div>
+          <div>00:42:17</div>
+          <div class="grijs">leerling · laptop · 48 GB vrij</div>
+        </div>
+      </div>
+      <div class="knop"><span>Stoppen (leerkracht)</span></div>
+    </div>
+    <div>Zo ziet het opnamevenster eruit. Het rode bolletje knippert en de tijd loopt. Dan is alles in orde.</div>
+  </div>
+
+  <h2>Goed om te weten</h2>
+  <ul>
+    <li>Je kan de opname niet zelf stoppen. Wordt het venster toch afgesloten, dan start de opname vanzelf opnieuw. Dat wordt genoteerd.</li>
+    <li>Sluit geen extra scherm aan. Dan start de opname niet.</li>
+    <li>Werk als het kan met je laptop aan de lader.</li>
+  </ul>
+
+  <div class="kader let-op">
+    <strong>Gaat er iets mis?</strong> Krijg je een melding, wordt het bolletje oranje of valt je laptop uit? Roep meteen de leerkracht.
+  </div>
+
+  <footer>Examenopname · handleiding voor leerlingen</footer>
+</section>
+
+<!-- ============================ LEERKRACHTEN ============================ -->
+<section class="pagina">
+  <header>
+    <svg width="56" height="56"><use href="#logo"/></svg>
+    <div>
+      <h1>Examenopname</h1>
+      <p>Handleiding voor leerkrachten</p>
+    </div>
+  </header>
+
+  <h2>Bij de start van het examen</h2>
+  <ol class="stappen">
+    <li>Laat elke leerling <strong>Examenopname</strong> starten op het bureaublad, voor het examen begint.</li>
+    <li>Wandel even rond. Bij elke leerling staat rechtsonder het venster met een knipperend rood bolletje en een tijd die loopt.</li>
+  </ol>
+
+  <h2>Tijdens het examen</h2>
+  <table>
+    <tr><td>Rood bolletje knippert</td><td>Alles in orde.</td></tr>
+    <tr><td>Oranje bolletje, "Opname wordt hersteld..."</td><td>Het programma start de opname zelf opnieuw. Blijft het langer dan een minuut oranje, noteer dan naam en uur.</td></tr>
+    <tr><td>"Extra scherm aangesloten!"</td><td>Laat de leerling het extra scherm loskoppelen.</td></tr>
+    <tr><td>"Bijna geen schijfruimte meer!"</td><td>Noteer het en verwittig de ICT-coördinator na het examen.</td></tr>
+    <tr><td>Laptop valt uit</td><td>Opnieuw opstarten en aanmelden. De opname gaat vanzelf verder.</td></tr>
+  </table>
+
+  <h2>De opname stoppen</h2>
+  <ol class="stappen">
+    <li>Klik in het opnamevenster op <strong>Stoppen (leerkracht)</strong>.</li>
+    <li>Typ het leerkrachtpaswoord. Dat krijg je van de ICT-coördinator.</li>
+    <li>Klik op <strong>Stoppen</strong>. De melding "De opname is gestopt en bewaard" verschijnt. Klaar.</li>
+  </ol>
+
+  <div class="kader let-op">
+    <strong>Het paswoord blijft geheim.</strong> Typ het zelf, laat niemand meekijken en zeg het nooit hardop. Foute pogingen worden genoteerd.
+  </div>
+
+  <h2>Vermoeden van fraude?</h2>
+  <p>De opname blijft op de laptop van de leerling staan. Leerlingen kunnen ze niet verwijderen. Noteer de naam van de leerling, het examen en het uur, en geef dat door aan de ICT-coördinator. Die haalt de opname op.</p>
+
+  <div class="kader info">
+    <strong>Melding "Examenopname is al geopend"?</strong> Dan loopt de opname al. Kijk rechtsonder op het scherm.<br>
+    <strong>Melding "Te weinig vrije ruimte"?</strong> Dan start de opname niet. Laat de leerling een reservelaptop gebruiken en verwittig de ICT-coördinator.
+  </div>
+
+  <footer>Examenopname · handleiding voor leerkrachten</footer>
+</section>
+
+</body>
+</html>

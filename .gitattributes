@@ -1,0 +1,2 @@
+# Batchbestanden moeten Windows-regeleindes (CRLF) houden, anders kan cmd labels missen.
+*.cmd -text

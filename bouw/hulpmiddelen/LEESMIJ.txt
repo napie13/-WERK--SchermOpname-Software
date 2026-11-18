@@ -1,0 +1,7 @@
+Hier komen de hulpmiddelen die Maak.cmd nodig heeft:
+
+  ffmpeg.exe            neemt het scherm op
+  IntuneWinAppUtil.exe  maakt het .intunewin-pakket (van Microsoft)
+
+Maak.cmd downloadt ze automatisch als ze ontbreken. Ze staan niet in git.
+Meer uitleg: docs\Technische-handleiding.md
